@@ -1,10 +1,20 @@
-import styles from "./page.module.css";
+"use client";
+import React from 'react'
+import styled from "styled-components";
+import Link from "next/link";
+
+const StyledWrapper = styled.div`
+  height: 100vh;
+`
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <h1>HELLO</h1>
+    <div>
+      <main>
+        <StyledWrapper>
+          <h1>HELLO</h1>
+          <Link href="/haymarket">Link to test project</Link>
+        </StyledWrapper>
       </main>
     </div>
   );
